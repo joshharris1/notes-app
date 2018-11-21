@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Notes App</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <header>
+    <div id="notes-app">
+      <center><h1>Notes App</h1></center>
+
+    </div>
+  </header>
+
+<center><div id="entry">
+      New Note<br>
+
+        <input type="text" id="note_text"/><br>
+      <button id="enterbutton" onclick="printNote()"> Press enter! </button>
+    </div></center>
+
+<div id="note_space">
+  <h2>Notes</ul></u></h2>
+</div>
+
+
+  <script type="text/javascript">
+      function printNote() {
+
+        var node = document.createElement("LI");
+        var note = document.getElementById("note_text").value;
+        var text_node = document.createTextNode(note);
+        node.appendChild(text_node);
+
+        document.getElementById("note_space").appendChild(node);
+      };
+      
+      document.getElementById("note_text").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("enterbutton").click();
+    }
+});
+    </script>
+
+
+
+</body>
+
+
+</html>

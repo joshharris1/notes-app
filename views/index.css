@@ -1,0 +1,41 @@
+body {
+  background-color:#D0D3D4
+}
+
+h1 {
+  font-family: Arial;
+}
+div {
+  font-family: Arial;
+}
+
+h2 {
+  text-decoration: underline;
+  text-indet: 50px;
+}
+
+/* styling for notes app */
+
+#notes-app {
+  color: #ffffff;
+  padding: 15px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #322b5d;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 0.2em;
+}
+
+/* Styling for 'new note' */
+
+#entry {
+  color: #ffffff;
+  padding: 15px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #DE7A7A;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 0.2em;
+}
